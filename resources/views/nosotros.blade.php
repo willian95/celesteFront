@@ -14,7 +14,7 @@
           <img src='assets/img/ofic.png' alt=''>
       </figure>
     </section>
-   
+
   </main>--->
   <div class="container pt-3 about-fix mt-4">
 
@@ -28,7 +28,7 @@
 
     <div id="hacemos" class="about-grid  mb-5">
       <h3>LO QUE HACEMOS </h3>
-  
+
       <div>
         <div class="row">
           <div class="col-md-9">
@@ -51,9 +51,9 @@
             <img src="assets/img/iso.png" alt="">
           </div>
         </div>
-      
+
      </div>
-     
+
 
     </div>
 
@@ -72,7 +72,7 @@
     </div>
 
     <!--<div class="row pt-5 mt-5 text-lg-right mb-5">
-     
+
       <div class="col-md-6">
         <h3 data-aos="fade-up"  data-aos-duration="1500">Nuestro Manifesto</h3>
         <p data-aos="fade-up" data-aos-duration="2500">Hoy necesitamos reconectarnos con la tierra, con una conexión
@@ -92,7 +92,17 @@
       </div>
     </div>--->
   </div>
+  <style>
+    footer {
+      position: relative!important;
+    }
 
+    .footer a,
+    .footer p {
+      color: #000000bd;
+      font-size: 1rem;
+    }
+  </style>
     @include("partials.footer")
 
 

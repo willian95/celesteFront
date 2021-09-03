@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ url('assets/css/sm-core-css.css') }}" />
     <link rel="stylesheet" href="{{ url('assets/css/sm-mint.css') }}" />
     <link rel="stylesheet" href="{{ url('assets/css/sm-style.css') }}" />
-    <!----- 
+    <!-----
        <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="stylesheet" href="assets/flat-font/flaticon.css">--->
     <link rel="stylesheet" href="{{ url('assets/font/stylesheet.css') }}" />
@@ -46,7 +46,7 @@
     <link rel="stylesheet" href="{{ url('assets/css/custom.css') }}">
     <style>
         footer {
-            position: relative;
+            position: relative!important;
         }
 
         .footer a,
@@ -61,11 +61,16 @@
         .sm-mint a:active,
         .sm-mint a.highlighted {
             padding: 14px 20px;
-            color: #000000;
+            color: #000000!important;
         }
         header.mextreo-header-area{
   position: relative;
     margin-bottom: 3rem;
+}
+.btn-drop {
+
+    color: #000!important;
+
 }
     </style>
 </head>
@@ -90,7 +95,7 @@
            </a>
         </div>
         @endforeach
-    
+
     </section>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
@@ -122,7 +127,7 @@
     <script type="text/javascript" src="assets/js/plugin.min.js"></script>
     <script type="text/javascript" src="assets/js/revslider.min.js"></script>
 
-    @include("partials.footer") 
+    @include("partials.footer")
 
 </body>
 

@@ -30,8 +30,6 @@
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="{{ url('/nosotros') }}">SOMOS</a>
-                        <a class="dropdown-item" href="nosotros.html">LO QUE HACEMOS</a>
-                        <a class="dropdown-item" href="nosotros.html">MANIFIESTO</a>
                         <a class="dropdown-item" href="{{ url('/equipo') }}">EQUIPO</a>
 
                       </div>
