@@ -4,7 +4,7 @@
 
   <div class="elipse">
     <video  autoplay muted>
-      <source src="assets/img/loader.mp4" type="video/mp4">
+      <source src="{{ url('assets/img/loader.mp4') }}" type="video/mp4">
       <source src="movie.ogg" type="video/ogg">
     Your browser does not support the video tag.
     </video>
@@ -21,7 +21,7 @@
           <!--  SLOT Zoom Horizontal-->
           <li data-index="1" data-transition="slotzoom-horizontal" data-slotamount="5" data-masterspeed="1000"
             data-fsmasterspeed="1000">
-            <img src="assets/img/banner.png" alt="" data-bgposition="center center" data-bgfit="cover"
+            <img src="{{ url('assets/img/banner.png') }}" alt="" data-bgposition="center center" data-bgfit="cover"
               data-bgrepeat="no-repeat" class="rev-slidebg banner-img" data-bgparallax="10" data-no-retina="" />
             <div class="slider_text_box">
               <div class="tp-loop-wrap">
@@ -40,7 +40,7 @@
           </li>
           <li data-index="2" data-transition="slotzoom-horizontal" data-slotamount="5" data-masterspeed="1000"
             data-fsmasterspeed="1000">
-            <img src="assets/img/BAHIA CALIENTE.png" alt="" data-bgposition="center center" data-bgfit="cover"
+            <img src="{{ url('assets/img/BAHIA CALIENTE.png') }}" alt="" data-bgposition="center center" data-bgfit="cover"
               data-bgrepeat="no-repeat" class="rev-slidebg banner-img" data-bgparallax="10" data-no-retina="" />
 
             <div class="bg_caption"></div>
@@ -49,7 +49,7 @@
         </ul>
       </div>
     </div>
-    
+
     @include("partials.footer")
 
   </section>
@@ -103,7 +103,7 @@
             lazyType: "none",
             shadow: 0,
             spinner: "off",
-            //  asi es sin autoplay, para autoplay cambiar a off, -1 , -1  
+            //  asi es sin autoplay, para autoplay cambiar a off, -1 , -1
             /*stopLoop: "on",
             stopAfterLoops: 0,
             stopAtSlide: 1,*/
@@ -134,17 +134,17 @@
                 levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
             },
             });
-        
+
             setTimeout(function () {
                 $('.elipse').fadeOut(300);
             }, 3000)
-            
+
         </script>
 
     @endpush
-  
 
-  
 
-  
+
+
+
 @endsection
