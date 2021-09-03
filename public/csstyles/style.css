@@ -1,0 +1,61 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main-content{
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+video{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.main-content__text{
+  position: absolute;
+  text-align: center;
+}
+.logo{
+
+  width: 700px;
+  height: auto;
+  object-fit: cover;
+  filter: invert(1);
+}
+.coming{
+  font-family: "font";
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 2rem;
+}
+@font-face {font-family: "font";
+  src: url("../assets/FontsFree-Net-Blancos.ttf"); /* IE9*/
+  src: url("f4d849075c9b4c0047fc56a828879854.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../assets/FontsFree-Net-Blancos.ttf") format("ttf"), /* chrome、firefox */
+  
+  url("../assets/FontsFree-Net-Blancos.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+
+}
+.main-content::before{
+  position: absolute;
+ /* background: #2f2f2f38;*/
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .logo {
+    width: 90%;
+  }
+  .coming {
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+}
