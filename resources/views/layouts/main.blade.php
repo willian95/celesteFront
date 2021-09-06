@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Celeste&Piedra</title>
+  <title>Celeste & Piedra</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <link rel="stylesheet" href="{{ url('assets/css/bootstrap.min.css') }}" />
   <link rel="stylesheet" href="{{ url('assets/css/sm-core-css.css') }}" />
   <link rel="stylesheet" href="{{ url('assets/css/sm-mint.css') }}" />
   <link rel="stylesheet" href="{{ url('assets/css/sm-style.css') }}" />
-  <!----- 
+  <!-----
  <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/flat-font/flaticon.css">--->
   <link rel="stylesheet" href="{{ url('assets/font/stylesheet.css') }}" />
@@ -34,7 +34,8 @@
   <link rel="stylesheet" href="{{ url('assets/sliders/slider-1/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css') }}" />
   <link rel="stylesheet" href="{{ url('assets/sliders/slider-1/fonts/font-awesome/css/font-awesome.css') }}" />
   <link rel="stylesheet" href="{{ url('assets/sliders/slider-1/css/rs6.css') }}" />
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ url('assets/img/logo.png') }}" />
+  <!--<link rel="icon" type="image/png" sizes="16x16" href="{{ url('assets/img/logo.png') }}" />-->
+  <link rel="icon" type="image/png" href="{{ url('assets/img/iso.png') }}" />
   <!--------------------------------------->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,7 +102,11 @@
     <!-- REVOLUTION BANNER JS FILES  -->
     <script type="text/javascript" src="{{ url('assets/js/plugin.min.js') }}"></script>
     <script type="text/javascript" src="{{ url('assets/js/revslider.min.js') }}"></script>
-
+<script>
+      setTimeout(function () {
+            $('#pre-loader').fadeOut(300);
+        }, 1500)
+</script>
     @stack('scripts')
 
     <!-- Modal contacto -->
@@ -141,7 +146,7 @@
             <div>
 
               <div class="contact-details pl-5" data-aos="fade-up" data-aos-duration="3000">
-                
+
                 <div class="single-info">
                   <h5>Dirección:</h5>
                   <p>Cra. 4 # 13 –14 Piso 4 Ed. Davivienda</p>

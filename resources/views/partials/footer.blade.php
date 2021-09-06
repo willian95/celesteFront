@@ -15,3 +15,8 @@
         href="tel:+573222239933"> (+57) 322 223 99 33</a> / Cra. 4 # 13 –14 Piso 4 Ed. Davivienda
     </p>
 </footer>
+<script>
+      setTimeout(function () {
+            $('#pre-loader').fadeOut(300);
+        }, 1500)
+</script>

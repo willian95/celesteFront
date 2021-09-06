@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Celeste&Piedra</title>
+  <title>Celest & Piedra | Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <link rel="stylesheet" href="{{ url('assets/css/bootstrap.min.css') }}" />
   <link rel="stylesheet" href="{{ url('assets/css/sm-core-css.css') }}" />
   <link rel="stylesheet" href="{{ url('assets/css/sm-mint.css') }}" />
   <link rel="stylesheet" href="{{ url('assets/css/sm-style.css') }}" />
-  <!----- 
+  <!-----
        <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="stylesheet" href="assets/flat-font/flaticon.css">--->
   <link rel="stylesheet" href="{{ url('assets/font/stylesheet.css') }}" />
@@ -69,7 +69,7 @@
       margin-bottom: 3rem;
     }
     .btn-drop {
-  
+
     color: black;
 
 }
@@ -82,14 +82,14 @@
   </button>
 
   @include("partials.navbar")
-
+  @include("partials.loader")
 
 
   <section class="mextreo-blog pt-0">
     <div class="container">
 
       <div class="row">
-        
+
         @foreach(DB::table("blogs")->get() as $blog)
           <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
               <a href="{{ url('/blog/'.$blog->slug) }}">
@@ -99,13 +99,13 @@
                           <span href="{{ url('/blog/'.$blog->slug) }}">
                               <h3>{{ $blog->title }}</h3>
                           </span>
-              
+
                       </div>
-                  </div>  
+                  </div>
               </a>
           </div>
         @endforeach
-        
+
       </div>
     </div>
   </section>

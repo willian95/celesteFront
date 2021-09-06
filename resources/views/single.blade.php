@@ -6,7 +6,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Celeste&Piedra</title>
+  <title>Celeste & Piedra</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <link rel="stylesheet" href="{{ url('assets/css/bootstrap.min.css') }}" />
   <link rel="stylesheet" href="{{ url('assets/css/sm-core-css.css') }}" />
@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="{{ url('assets/css/slick-theme.min.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!----- 
+  <!-----
        <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="stylesheet" href="assets/flat-font/flaticon.css">--->
   <link rel="stylesheet" href="{{ url('assets/font/stylesheet.css') }}" />
@@ -66,10 +66,10 @@
     .sm-mint a:active,
     .sm-mint a.highlighted {
       padding: 14px 20px;
-     
+
 
     }
-    
+
   </style>
 </head>
 
@@ -84,17 +84,17 @@
 
 
   @include("partials.navbar")
-
+  @include("partials.loader")
   <div class="main position-relative">
     <div class="slider slider-for">
-      
-     
+
+
         <a data-fancybox="gallery" href="{{ $project->main_image }}">
           <img src="{{ $project->main_image }}" alt="">
           <div class="mask"></div>
           <div class="icon-expand" data-aos="fade-up" data-aos-duration="2000">
             <img class="" src="{{ url('assets/img/ecpand.svg') }}" alt="">
-      
+
           </div>
         </a>
 
@@ -104,13 +104,13 @@
         <div class="mask"></div>
         <div class="icon-expand" data-aos="fade-up" data-aos-duration="3000">
           <img class="" src="{{ url('assets/img/ecpand.svg') }}" alt="">
-    
+
         </div>
       </a>
       @endforeach
-      
+
     </div>
-  
+
   </div>
 
   <section class="">
@@ -135,7 +135,7 @@
             @foreach(DB::table("secondary_images")->where("project_id", $project->id)->get() as $image)
             <div><img src="{{ $image->image }}" alt=""></div>
             @endforeach
-            
+
 
           </div>
 
@@ -208,7 +208,7 @@
     });
 
   </script>
-   
+
 </body>
 
 </html>

@@ -80,7 +80,7 @@
         <img src="assets/img/up-arrow.png" class="flaticon-up scrollup-icon"></img>
       </button>
       @include("partials.navbar")
-
+      @include("partials.loader")
 
     <section class="projects container mb-5 ">
         @foreach(DB::table("projects")->get() as $project)

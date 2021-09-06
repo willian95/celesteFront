@@ -1566,6 +1566,7 @@
     vertical-align: middle;
     background: #fff;
     z-index: 99999;
+    top:0;
   }
 
   .pre-loader-container {
@@ -1708,9 +1709,10 @@
     color: rgb(0, 0, 0);
     transition: .5s ease;
   }
+  /*
   header.mextreo-header-area.nav-fixed img {
     filter: invert(1);
-  }
+  }*/
   .flaticon-up, .scroll-top{
     display: none;
   }
@@ -1736,14 +1738,28 @@
 
 
   @media (max-width: 576px) {
+    .dropdown-menu {
+
+        float: inherit;
+
+    }
+    .logo-loader .icon-loader {
+        width: 50%;
+
+    }
+    .tp-simpleresponsive img {
+        object-position: -250px 0px;
+    }
+      .team h3{
+        font-size: 1.3rem;
+        margin-top: 1rem;
+      }
     .about-grid {
       grid-template-columns: 100%;
     }
     .about {
-      height: 78vh;
-
-      background-size: cover;
-      background-position: center;
+        height: 30vh;
+        background-position: initial;
   }
   #main-menu {
 
@@ -1791,17 +1807,39 @@
   #main-menu .sm-mint a{
     padding: 14px 6px;
   }
+  .mt-10 {
+    margin-top: 0rem;
+}
+header.mextreo-header-area {
+
+    margin-bottom: 1rem;
+}
   }
   @media (max-width: 767px) {
+    header.mextreo-header-area .logo-wrapper img {
+        width: 200px;
 
+    }
+    .main-menu-btn {
+
+        z-index: 2;
+    }
+    header.mextreo-header-area .logo-wrapper {
+
+        z-index: 2;
+    }
     #main-menu {
-      margin-top: .5rem;
+        margin-top: 0;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        padding-top: 4rem;
     }
     .btn-drop {
       font-size: .9rem;
     }
     #main-menu a {
-
+        padding: .375rem .75rem;
       font-size: .9rem;
     }
     .about-fix h3 {
@@ -1815,4 +1853,8 @@
 
   .bg-whithe{
     background: #ffffffd1!important;
+  }
+
+.main-menu-btn-icon--black,  .main-menu-btn-icon--black:before,  .main-menu-btn-icon--black:after{
+    background: rgb(0 0 0);
   }

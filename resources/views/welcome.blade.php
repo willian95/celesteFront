@@ -28,7 +28,7 @@
                 <div class="tp-mask-wrap">
                   <div class=" tp-caption tp-resizeme count" style="z-index: 9999;">
                   </div>
-                  Brian’s Villa<br>Private Residence
+
 
                 </div>
               </div>
@@ -104,12 +104,12 @@
             shadow: 0,
             spinner: "off",
             //  asi es sin autoplay, para autoplay cambiar a off, -1 , -1
-            /*stopLoop: "on",
+            stopLoop: "on",
             stopAfterLoops: 0,
-            stopAtSlide: 1,*/
-            stopLoop: "off",
+            stopAtSlide: 1,
+           /* stopLoop: "off",
             stopAfterLoops: -1,
-            stopAtSlide: -1,
+            stopAtSlide: -1,*/
             shuffle: "off",
             autoHeight: "off",
             fullScreenAutoWidth: "off",

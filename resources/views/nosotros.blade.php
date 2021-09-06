@@ -3,7 +3,7 @@
 @section("content")
 
     @include("partials.navbar")
-
+    @include("partials.loader")
   <section class="about bg-fixed bg-img  " style="background-image: url(assets/img/about.jpeg);">
     <div class="banner-img"></div>
 
@@ -103,6 +103,7 @@
       font-size: 1rem;
     }
   </style>
+
     @include("partials.footer")
 
 

@@ -1,24 +1,31 @@
 <header class="mextreo-header-area">
     <div class="container c-fulid-max">
       <div class="row">
-        <div class="col-4 col-md-4 d-flex">
+        <div class=" col-md-4 d-flex">
           <div class="logo-wrapper">
-            <a href="{{ url('/') }}">
-              @if(request()->is('/'))
+            <a href="{{ url('/home') }}">
+
+              @if(url()->current() == url('/home'))
                 <img src="{{ url('assets/img/logo-white.png') }}" alt="" />
               @else
                 <img src="{{ url('assets/img/logo-black.png') }}" alt="" />
               @endif
             </a>
+
           </div>
         </div>
-        <div class="col-8 col-md-8">
+        <div class="col-8 col-md-8 menu-xs">
           <div class="mextreo-menu">
             <div class="mxm-wrspper">
               <nav class="main-nav" role="navigation">
                 <input id="main-menu-state" type="checkbox" />
                 <label class="main-menu-btn" for="main-menu-state">
-                  <span class="main-menu-btn-icon"></span>
+                @if(url()->current() == url('/home'))
+                <span class="main-menu-btn-icon"></span>
+              @else
+              <span class="main-menu-btn-icon main-menu-btn-icon--black "></span>
+              @endif
+
                 </label>
 
                 <ul id="main-menu" class="sm sm-mint">
