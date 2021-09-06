@@ -1,6 +1,36 @@
 @extends("layouts.main")
 
 @section("content")
+<style>
+    footer {
+      position: relative!important;
+    }
+
+    .footer a,
+    .footer p {
+      color: #000000bd;
+      font-size: 1rem;
+    }
+
+    .sm-mint a,
+    .sm-mint a:hover,
+    .sm-mint a:focus,
+    .sm-mint a:active,
+    .sm-mint a.highlighted {
+      padding: 14px 20px;
+      color: #000000;
+    }
+
+    header.mextreo-header-area {
+      position: relative;
+      margin-bottom: 3rem;
+    }
+    .btn-drop {
+
+    color: black!important;
+
+}
+  </style>
 
     @include("partials.navbar")
     @include("partials.loader")

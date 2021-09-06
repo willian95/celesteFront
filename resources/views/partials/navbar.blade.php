@@ -7,6 +7,10 @@
 
               @if(url()->current() == url('/home'))
                 <img src="{{ url('assets/img/logo-white.png') }}" alt="" />
+
+                @elseif(url()->current() == url('/single'))
+                <img src="{{ url('assets/img/logo-white.png') }}" alt="" />
+                @endelseif
               @else
                 <img src="{{ url('assets/img/logo-black.png') }}" alt="" />
               @endif
