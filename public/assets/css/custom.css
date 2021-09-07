@@ -226,6 +226,7 @@
       border-width: 0;
     }
 
+
   }
 
   header.mextreo-header-area {
@@ -1738,6 +1739,9 @@
 
 
   @media (max-width: 576px) {
+    section.blog-details {
+        margin-top: 0;
+    }
     .dropdown-menu {
 
         float: inherit;
@@ -1816,6 +1820,7 @@ header.mextreo-header-area {
 }
   }
   @media (max-width: 767px) {
+
     header.mextreo-header-area .logo-wrapper img {
         width: 200px;
 
@@ -1858,3 +1863,24 @@ header.mextreo-header-area {
 .main-menu-btn-icon--black,  .main-menu-btn-icon--black:before,  .main-menu-btn-icon--black:after{
     background: rgb(0 0 0);
   }
+
+
+
+  @media (max-width: 992px) {
+    #main-menu {
+
+        margin-top: .5rem;
+
+    }
+    #main-menu a {
+        font-size: .9rem;
+    }
+    .btn-drop {
+        font-size: .9rem;
+    }
+    .sm-mint a {
+        padding: 11px 12px;
+
+    }
+  }
+
