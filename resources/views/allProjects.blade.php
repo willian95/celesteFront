@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="{{ url('assets/sliders/slider-1/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css') }}" />
     <link rel="stylesheet" href="{{ url('assets/sliders/slider-1/fonts/font-awesome/css/font-awesome.css') }}" />
     <link rel="stylesheet" href="{{ url('assets/sliders/slider-1/css/rs6.css') }}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url('assets/img/logo.png') }}" />
+    <link rel="icon" type="image/png" href="{{ url('assets/img/iso.png') }}" />
     <!--------------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
