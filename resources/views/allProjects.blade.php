@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Celeste&Piedra</title>
+    <title>Celeste & Piedra</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="{{ url('assets/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ url('assets/css/sm-core-css.css') }}" />
