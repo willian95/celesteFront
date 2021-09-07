@@ -208,7 +208,11 @@
     });
 
   </script>
-
+<script>
+      setTimeout(function () {
+            $('#pre-loader').fadeOut(300);
+        }, 1500)
+</script>
 </body>
 
 </html>
