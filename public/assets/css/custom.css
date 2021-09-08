@@ -1804,6 +1804,7 @@ header.mextreo-header-area.nav-fixed button {
     }
 }
 @media (max-width: 767px) {
+
     .menu-xs {
         position: absolute;
         width: 100%;
@@ -1854,8 +1855,12 @@ header.mextreo-header-area.nav-fixed button {
 }
 
 @media (max-width: 992px) {
+    .btn {
+
+        padding: .5rem 0.5rem;
+        }
     #main-menu {
-        margin-top: 0rem;
+        margin-top: .1rem;
     }
     #main-menu a {
         font-size: 0.9rem;
@@ -1864,7 +1869,7 @@ header.mextreo-header-area.nav-fixed button {
         font-size: 0.9rem;
     }
     .sm-mint a {
-        padding: 11px 12px;
+        padding: 11px 12px!important;
     }
 }
 
