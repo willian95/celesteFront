@@ -88,7 +88,7 @@
            <a href="{{ url('/proyecto/'.$project->slug) }}">
             <div class="position-re o-hidden"> <img src="{{ $project->main_image }}" alt=""> </div>
             <div class="con">
-                <h6><span href="">Lorem</span></h6>
+                {{--<h6><span href="">Lorem</span></h6>--}}
                 <h5><span href="">{{ $project->name }}</span></h5>
                 <div class="line"></div> <a href=""><i class="ti-arrow-right"></i></a>
             </div>
