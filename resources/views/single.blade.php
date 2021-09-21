@@ -92,7 +92,7 @@
         <a data-fancybox="gallery" href="{{ $project->main_image }}">
           <img src="{{ $project->main_image }}" alt="">
           <div class="mask"></div>
-          <div class="icon-expand" data-aos="fade-up" data-aos-duration="2000">
+          <div class="icon-expand" >
             <img class="" src="{{ url('assets/img/ecpand.svg') }}" alt="">
 
           </div>
@@ -102,7 +102,7 @@
       <a data-fancybox="gallery" href="{{ $image->image  }}">
         <img src="{{$image->image}}" alt="">
         <div class="mask"></div>
-        <div class="icon-expand" data-aos="fade-up" data-aos-duration="3000">
+        <div class="icon-expand">
           <img class="" src="{{ url('assets/img/ecpand.svg') }}" alt="">
 
         </div>
