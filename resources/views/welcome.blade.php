@@ -2,9 +2,16 @@
 
 @section("content")
 
-<div class="elipse">
+<div class="elipse video-xl">
     <video autoplay muted>
         <source src="{{ url('assets/img/loader.mp4') }}" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<div class="elipse video-xs">
+    <video autoplay muted>
+        <source src="{{ url('assets/img/vresponsive.m4v') }}" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
         Your browser does not support the video tag.
     </video>
