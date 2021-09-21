@@ -1897,8 +1897,8 @@ header.mextreo-header-area.nav-fixed button {
     filter: brightness(1);
 }
 
-.video-xs{
-    display: none;
+.video-xs video{
+    display: none!important;
 
 }
 .video-xs video {
@@ -1912,7 +1912,7 @@ header.mextreo-header-area.nav-fixed button {
     .video-xl{
         display:none;
     }
-    .video-xs{
-        display: block;
+    .video-xs video{
+        display: block!important;
     }
 }
