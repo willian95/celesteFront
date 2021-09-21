@@ -12,7 +12,7 @@
     </div>
     <p> COPYRIGHT © 2021 CELESTEYPIEDRA / E-MAIL: <a
         href="mailto:info@celesteypiedra.com">info@celesteypiedra.com</a> / TELEFONO: <a
-        href="tel:+573222239933"> (+57) 322 223 99 33</a> / Cra. 4 # 13 –14 Piso 4 Ed. Davivienda
+        href="tel:+573222239933"> (+57) 322 223 99 33</a> / Cra. 4 # 13 –14 Piso 4 Ed. Davivienda / Santa Marta
     </p>
 </footer>
 <script>

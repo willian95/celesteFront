@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,3 +58,5 @@ Route::get("blog/{slug}", function($slug){
     return view("blog", ["blog" => $blog]);
 
 });
+
+Route::post("/send/message", [ContactController::class, "sendEmail"]);

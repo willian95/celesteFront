@@ -102,6 +102,7 @@
     <!-- REVOLUTION BANNER JS FILES  -->
     <script type="text/javascript" src="{{ url('assets/js/plugin.min.js') }}"></script>
     <script type="text/javascript" src="{{ url('assets/js/revslider.min.js') }}"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
       setTimeout(function () {
             $('#pre-loader').fadeOut(300);
@@ -123,24 +124,27 @@
         <div class="modal-body">
           <div class="grid-contact">
             <div>
-              <form id="cf" method="POST">
+     
                 <div class="form-group mcfg">
-                  <input type="text" class="form-control m-input" name="name" id="name" placeholder="Nombre*"
+                  <input type="text" class="form-control m-input" name="name" id="name-message" placeholder="Nombre*"
                     onfocus="this.placeholder = ''" onblur="this.placeholder ='Nombre*'">
                 </div>
                 <div class="form-group mcfg">
-                  <input type="text" class="form-control m-input" name="email" id="email" placeholder="Correo electronico  *"
+                  <input type="text" class="form-control m-input" name="email" id="email-message" placeholder="Correo electronico  *"
                     onfocus="this.placeholder = ''" onblur="this.placeholder ='Correo electronico *'">
                 </div>
                 <div class="form-group mcfg">
-                  <textarea rows="4" class="form-control m-input" name="msg" id="msg" placeholder="Mensaje *"
+                  <textarea rows="4" class="form-control m-input" name="msg" id="message-message" placeholder="Mensaje *"
                     onfocus="this.placeholder =''" onblur="this.placeholder ='Mensaje *'"></textarea>
                 </div>
-                <button type="submit" id="submit" class="m-submit btn-enviar">enviar</button>
+                <button type="button" id="buttonSendMessage" class="m-submit btn-enviar" onclick="sendMessage()">enviar</button>
+                <div id="spinner" style="display:none">
+                   Enviando...
+                </div>
                 <div class="col-md-12 text-center">
                   <div class="cf-msg"></div>
                 </div>
-              </form>
+           
             </div>
 
             <div>
@@ -150,7 +154,7 @@
                 <div class="single-info">
                   <h5>Dirección:</h5>
                   <p>Cra. 4 # 13 –14 Piso 4 Ed. Davivienda</p>
-
+                  <p>Santa Marta</p>
                 </div>
                 <div class="single-info">
                   <h5>Teléfono:</h5>
@@ -172,6 +176,40 @@
       </div>
     </div>
   </div>
+
+  <script>
+        function sendMessage() {
+
+            let email = $("#email-message").val()
+            let name = $("#name-message").val()
+            let message = $("#message-message").val()
+
+            $("#buttonSendMessage").css("display", "none")
+            $("#spinner").css("display", "block")
+
+            $.post("{{ url('/send/message') }}", {
+            "email": email,
+            "name": name,
+            "text": message,
+            "_token": "{{ csrf_token() }}"
+            }, function(data) {
+
+            $("#buttonSendMessage").css("display", "block")
+            $("#spinner").css("display", "none")
+
+            $("#email-message").val("")
+            $("#name-message").val("")
+            $("#message-message").val("")
+
+            swal({
+                icon: "success",
+                text: "Mensaje enviado"
+            })
+
+            })
+
+        }
+    </script>
 
 </body>
 
