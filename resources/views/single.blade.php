@@ -123,7 +123,7 @@
             <p  class="icons-detail_content"> <img class="icon-detail"
                 src="{{ url('assets/img/pin.svg') }}" alt=""> {{ $project->location }}</p>
             <ul class="items-details">
-              <li class="mb-3"> <img class="icon-detail " src="{{ url('assets/img/home.svg') }}" alt=""> Habitacional</li>
+              <li class="mb-3"> <img class="icon-detail " src="{{ url('assets/img/home.svg') }}" alt=""> {{ $project->project_type }}</li>
               <li> <img class="icon-detail" src="{{ url('assets/img/rule.svg') }}" alt=""> {{ $project->square_meter }}m<sup>2</sup></li>
             </ul>
             <p >{!! $project->description !!}</p>
