@@ -69,7 +69,6 @@
 
 
     }
-
   </style>
 </head>
 
@@ -85,6 +84,12 @@
 
   @include("partials.navbar")
   @include("partials.loader")
+  <style>
+
+    .dropdown-menu  {
+    background: #ffffff70!important;
+    }
+  </style>
   <div class="main position-relative">
     <div class="slider slider-for">
 
