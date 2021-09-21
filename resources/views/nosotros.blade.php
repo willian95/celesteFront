@@ -22,7 +22,7 @@
       <h3>somos</h3>
       <p>Un estudio que se dedica al diseño arquitectónico y urbanístico, adaptándonos a la naturaleza con la
         conceptualización de diseños, basa <br> dos en principios de sostenibilidad, adaptabilidad y resiliencia. Un
-        estudio compuesto por un grupo de personas que día a día aportan <br> con
+        estudio compuesto por un grupo de personas que día a día aportan con
         sus experiencias revelando la esencia de los lugares para convertirlos en destinos.</p>
     </div>
 

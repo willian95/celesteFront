@@ -114,7 +114,7 @@
   </div>
 
   <section class="">
-    <div class="container">
+    <div class="containe">
       <div class="row">
         <div class="col-md-5">
           <div class="hero-content ">
@@ -199,7 +199,7 @@
       asNavFor: '.slider-nav'
     });
     $('.slider-nav').slick({
-      slidesToShow: 5,
+      slidesToShow: 3,
       slidesToScroll: 1,
       asNavFor: '.slider-for',
     infinite:false,
