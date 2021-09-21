@@ -1740,6 +1740,7 @@ header.mextreo-header-area.nav-fixed button {
 }
 
 @media (max-width: 576px) {
+
     .dropdown:hover > .dropdown-menu {
 
         text-align: center;
@@ -1894,4 +1895,24 @@ header.mextreo-header-area.nav-fixed button {
 }
 .filter-nav {
     filter: brightness(1);
+}
+
+.video-xs{
+    display: none;
+
+}
+.video-xs video {
+
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .video-xl{
+        display:none;
+    }
+    .video-xs{
+        display: block;
+    }
 }
