@@ -189,7 +189,7 @@
 
             <div>
 
-              <div class="contact-details pl-5" data-aos="fade-up" data-aos-duration="3000">
+              <div class="contact-details pl-5" >
 
                 <div class="single-info">
                   <h5>Dirección:</h5>
@@ -198,12 +198,12 @@
                 </div>
                 <div class="single-info">
                   <h5>Teléfono:</h5>
-                  <p> (+57) 322 223 99 33 </p>
+                  <p> <a href="tel:(+57) 322 223 99 33" class="__cf_email__">(+57) 322 223 99 33</a> </p>
 
                 </div>
                 <div class="single-info">
                   <h5>Email:</h5>
-                  <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                  <p><a href="mailto:info@celesteypiedra.com" class="__cf_email__"
                      > info@celesteypiedra.com</a></p>
 
                 </div>
