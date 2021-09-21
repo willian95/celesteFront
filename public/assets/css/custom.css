@@ -1697,7 +1697,7 @@ video {
 }
 .dropdown-item {
     padding: 6px 20px !important;
-    text-transform: lowercase !important;
+    text-transform: capitalize!important;
     font-size: 1.1rem !important;
 }
 .dropdown-item::first-letter {
