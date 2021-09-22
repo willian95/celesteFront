@@ -2,7 +2,7 @@
 
 //   JS INDEX
 /* =================== */
-/* 
+/*
 
     ## Animation Js
     ## Preloder
@@ -10,9 +10,9 @@
     ## Scrool Menu
     ## Scrool Up
     ## smart menu
-    ## smoothscroll 
-    ## Sidepanel JS 
-    ## Owl Carousel 
+    ## smoothscroll
+    ## Sidepanel JS
+    ## Owl Carousel
     ## Timer Js
     ## Googel Map
     ## Ajax
@@ -27,19 +27,17 @@ AOS.init({
     duration:   5000,
     disable:    false,
     once:       false,
-    mirror:     false, 
- 
+    mirror:     false,
+
     startEvent: 'DOMContentLoaded'
- 
+
   });
-  
+
 (function($) {
-  "use strict"; 
+  "use strict";
 
 //**================== Preloder========================*//
-$(window).on('load', function() {
-  $('#preloader').fadeOut('slow', function() { $(this).remove(); });
-});
+
 //**================= End of Preloder =====================**//
 
 
@@ -74,13 +72,7 @@ if ($('.scroll-to-target').length) {
 //**===================Scroll UP ===================**//
 
 //**================= Smart Menu =====================**//
-// SmartMenus init
-$(function() {
-  $('#main-menu').smartmenus({
-    subMenusSubOffsetX: 6,
-    subMenusSubOffsetY: -8
-  });
-});
+
 
 // SmartMenus mobile menu toggle button
 $(function() {
@@ -135,13 +127,13 @@ $(function() {
   });
 
 
-  
+
 //**================== Owl Carousl========================*//
 
-if ($('.project').length > 0) {   
+if ($('.project').length > 0) {
 
   $('.project').owlCarousel({
-  
+
     loop:true,
     margin:30,
     center:true,
@@ -187,36 +179,36 @@ if ($('.project').length > 0) {
         'seconds': seconds
       };
     }
-    
+
     function initializeClock(id, endtime) {
       var clock = document.getElementById(id);
       var daysSpan = clock.querySelector('.days');
       var hoursSpan = clock.querySelector('.hours');
       var minutesSpan = clock.querySelector('.minutes');
       var secondsSpan = clock.querySelector('.seconds');
-    
+
       function updateClock() {
         var t = getTimeRemaining(endtime);
-    
+
         daysSpan.innerHTML = t.days;
         hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
         minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
         secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-    
+
         if (t.total <= 0) {
           clearInterval(timeinterval);
         }
       }
-    
+
       updateClock();
       var timeinterval = setInterval(updateClock, 1000);
     }
-    var deadline = new Date("Sep5, 2020 19:37:25"); 
+    var deadline = new Date("Sep5, 2020 19:37:25");
     initializeClock('clockdiv', deadline);
-  } 
+  }
 
   //**=================End Timer=====================**//
-  
+
     // RTL Switcher
 
     $('.psg-icon').on('click', function(){
@@ -232,10 +224,10 @@ if ($('.project').length > 0) {
 
 //**=================== Google Map ==========================**//
 
-if ($('#googleMap').length > 0) { 
+if ($('#googleMap').length > 0) {
   var user_lat, user_lng;
       var map;
-  
+
       function initMap() {
           map = new google.maps.Map(document.getElementById('googleMap'), {
               center: {
@@ -245,18 +237,18 @@ if ($('#googleMap').length > 0) {
               zoom: 15,
               scrollwheel: false
           });
-                
+
         var marker = new google.maps.Marker({
           position:  {  lat: 23.782062, lng: 90.416053},
           map: map,
        /*    icon: "assets/img/locator.png" */
         });
-  
-            } 
+
+            }
           }
-  
+
   //*================ End Google Map ============*//
-  
+
 /*---------------------
     // Ajax Contact Form
     --------------------- */
@@ -266,16 +258,16 @@ if ($('#googleMap').length > 0) {
         var email = $('#email').val();
         var msg = $('#msg').val();
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    
+
         if (!regex.test(email)) {
             alert('Please enter valid email');
             return false;
         }
-    
+
         name = $.trim(name);
         email = $.trim(email);
         msg = $.trim(msg);
-    
+
         if (name != '' && email != '' && msg != '') {
             var values = "name=" + name + "&email=" + email + "&msg=" + msg;
             $.ajax({
@@ -286,7 +278,7 @@ if ($('#googleMap').length > 0) {
                     $('#name').val('');
                     $('#email').val('');
                     $('#msg').val('');
-    
+
                    $('.cf-msg').fadeIn().html('<div class="alert alert-success"><strong>Success!</strong> Email has been sent successfully.</div>');
                     setTimeout(function() {
                         $('.cf-msg').fadeOut('slow');
@@ -294,7 +286,7 @@ if ($('#googleMap').length > 0) {
                 }
             });
         } else {
-            $('.cf-msg').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> Please fillup the informations correctly.</div>')   
+            $('.cf-msg').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> Please fillup the informations correctly.</div>')
             $('.cf-msg').fadeOut(2000)
         }
         return false;
@@ -327,7 +319,7 @@ $(document).ready(function() {
   o2.on('click', '.owl-prev', function () {
     o3.trigger('prev.owl.carousel')
   });
- 
+
   //Carousel settings
   o1.owlCarousel({
     center : true,
@@ -358,7 +350,7 @@ $(document).ready(function() {
   });
  });
 
- 
+
  $(function (){
   $(window).scroll(function(){
      if ($(this).scrollTop() >= 100) {
@@ -366,7 +358,15 @@ $(document).ready(function() {
      } else {
      $('.dropdown-menu').removeClass("bg-whithe");
      }
-  
-  
+
+
   });
+
+
+
+  setTimeout(function() {
+    $('.elipse').fadeOut(50000);
+}, 5000)
+
+
 });
