@@ -103,7 +103,19 @@
       font-size: 1rem;
     }
   </style>
+<style>
 
+    .sm-mint a,
+    .sm-mint a:hover,
+    .sm-mint a:focus,
+    .sm-mint a:active,
+    .sm-mint a.highlighted {
+      padding: 14px 20px;
+      color: #000000;
+    }
+
+
+  </style>
     @include("partials.footer")
 
 

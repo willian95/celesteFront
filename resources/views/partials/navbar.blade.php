@@ -54,7 +54,7 @@
                       Proyectos
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="{{ url('proyectos') }}">Todos</a>
+                        <a class="dropdown-item" href="{{ url('proyectos') }}">TODOS</a>
 
                         @foreach(DB::table("projects")->take(4)->orderBy("id", "desc")->get() as $project)
                           <a class="dropdown-item" href="{{ url('proyecto/'.$project->slug) }}">{{ $project->name }}</a>

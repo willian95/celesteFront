@@ -1698,7 +1698,7 @@ video {
 .dropdown-item {
     padding: 6px 20px !important;
     text-transform: capitalize!important;
-    font-size: 1.1rem !important;
+    font-size: .9rem !important;
 }
 .dropdown-item::first-letter {
     text-transform: uppercase;
@@ -1907,7 +1907,9 @@ header.mextreo-header-area.nav-fixed button {
     height: 100vh;
     object-fit: cover;
 }
-
+.img-ar{
+    height:75%;
+}
 @media (min-width: 0px) and (max-width: 767px) {
     .video-xl{
         display:none;
@@ -1920,5 +1922,8 @@ header.mextreo-header-area.nav-fixed button {
     }
     html{
         overflow-x: hidden;
+    }
+    .img-ar{
+        height: 100%;
     }
 }
