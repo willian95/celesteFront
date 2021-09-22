@@ -1915,4 +1915,10 @@ header.mextreo-header-area.nav-fixed button {
     .video-xs video{
         display: block!important;
     }
+    .hero-content {
+    margin-left: 2rem;
+    }
+    html{
+        overflow-x: hidden;
+    }
 }
