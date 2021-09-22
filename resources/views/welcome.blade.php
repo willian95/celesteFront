@@ -21,33 +21,14 @@
 
 @include("partials.navbar")
 
+<div id="white-board" style="position: fixed; top:0; left: 0; bottom: 0; width: 100%; background-color: #fff; z-index: 999;"></div>
+
 <section class="bannerHome">
     <div class="bannercontainer">
         <div class="banner" data-version="5.3.1.6">
             <ul>
                 <!--  SLOT Zoom Horizontal-->
-                {{--<li data-index="1" data-transition="slotzoom-horizontal" data-slotamount="5" data-masterspeed="1000" data-fsmasterspeed="1000">
-                    <img src="{{ url('assets/img/banner.png') }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg banner-img" data-bgparallax="10" data-no-retina="" />
-                    <div class="slider_text_box">
-                        <div class="tp-loop-wrap">
-                            <div class="tp-mask-wrap">
-                                <div class=" tp-caption tp-resizeme count" style="z-index: 9999;">
-                                </div>
 
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="bg_caption"></div>
-                    <div class="bg_caption_footer"></div>
-                </li>
-                <li data-index="2" data-transition="slotzoom-horizontal" data-slotamount="5" data-masterspeed="1000" data-fsmasterspeed="1000">
-                    <img src="{{ url('assets/img/BAHIA CALIENTE.png') }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg banner-img" data-bgparallax="10" data-no-retina="" />
-
-                    <div class="bg_caption"></div>
-                    <div class="bg_caption_footer"></div>
-                </li>--}}
 
                 @foreach(DB::table("home_images")->get() as $banner)
                     <li data-index="1" data-transition="slotzoom-horizontal" data-slotamount="5" data-masterspeed="1000" data-fsmasterspeed="1000">
@@ -78,6 +59,19 @@
 
 @push("scripts")
 <script>
+
+    $(document).ready(function(){
+        
+        setTimeout(function(){
+            $('.elipse').fadeOut(3000);
+            $("#white-board").css("display", "none")
+            $('.elipse').css("display", "none")
+        }, 6000)
+
+        
+
+    })
+
     $(".tes").hover(function() {
         $('#popup').modal({
             show: true,
@@ -157,9 +151,9 @@
         },
     });
 
-    setTimeout(function() {
-        $('.elipse').fadeOut(300);
-    }, 3000)
+    
+    
+    
     $(".main-menu-btn").on("click", function() {
         if (!$('.logo-wrapper').hasClass("is-active")) {
             $('.logo-wrapper').addClass("filter")
