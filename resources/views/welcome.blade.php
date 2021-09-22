@@ -59,7 +59,6 @@
 
 @push("scripts")
 <script>
-
     $(document).ready(function(){
         
         setTimeout(function(){
@@ -67,11 +66,8 @@
             $("#white-board").css("display", "none")
             $('.elipse').css("display", "none")
         }, 6000)
-
         
-
     })
-
     $(".tes").hover(function() {
         $('#popup').modal({
             show: true,
@@ -82,7 +78,6 @@
         sliderType: "standard",
         sliderLayout: "fullscreen",
         dottedOverlay: "none",
-
         delay: 8000,
         autoHeight: "on",
         minHeight: 480,
@@ -102,7 +97,6 @@
             bullets: {
                 enable: true,
                 hide_onmobile: true,
-
                 direction: "vertical",
                 h_align: "right",
                 v_align: "center",
@@ -110,7 +104,6 @@
                 v_offset: 0,
                 space: 27,
             },
-
         },
         responsiveLevels: [1920, 1199, 991, 768, 480],
         visibilityLevels: [1920, 960, 991, 768, 480],
@@ -150,17 +143,18 @@
             levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
         },
     });
-
+    
     
     
     $(".main-menu-btn").on("click", function() {
+        if (!$('.logo-wrapper').hasClass("is-active")) {
+            $('.logo-wrapper').addClass("filter")
+            $('.main-menu-btn').addClass("filter")
         } else {
             $('.logo-wrapper').removeClass("filter")
             $('.main-menu-btn').removeClass("filter")
         }
     });
-
-
 </script>
 
 @endpush
