@@ -153,12 +153,7 @@
 
     
     
-    
     $(".main-menu-btn").on("click", function() {
-        if (!$('.logo-wrapper').hasClass("is-active")) {
-            $('.logo-wrapper').addClass("filter")
-            $('.main-menu-btn').addClass("filter")
-
         } else {
             $('.logo-wrapper').removeClass("filter")
             $('.main-menu-btn').removeClass("filter")
