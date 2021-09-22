@@ -364,9 +364,6 @@ $(document).ready(function() {
 
 
 
-  setTimeout(function() {
-    $('.elipse').fadeOut(50000);
-}, 5000)
 
 
 });

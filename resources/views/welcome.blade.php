@@ -157,9 +157,8 @@
         },
     });
 
-    setTimeout(function() {
-        $('.elipse').fadeOut(300);
-    }, 3000)
+        $('.elipse').fadeOut(3000);
+
     $(".main-menu-btn").on("click", function() {
         if (!$('.logo-wrapper').hasClass("is-active")) {
             $('.logo-wrapper').addClass("filter")
