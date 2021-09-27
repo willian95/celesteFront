@@ -49,7 +49,7 @@
 
             <p>Visualización 360 inmersiva e interactiva.</p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 logo-about">
             <img src="assets/img/iso.png" alt="">
           </div>
         </div>

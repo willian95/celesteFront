@@ -1933,6 +1933,13 @@ header.mextreo-header-area.nav-fixed button {
     }
     .ws img {
     width: 40px;
+    }
+
+.logo-about{
+    margin-top: 2rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 }
 
