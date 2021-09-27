@@ -1926,6 +1926,14 @@ header.mextreo-header-area.nav-fixed button {
     .img-ar{
         height: 100%;
     }
+    .ws {
+
+        bottom: 8rem;
+        right: .9rem;
+    }
+    .ws img {
+    width: 40px;
+}
 }
 
 
