@@ -14,11 +14,11 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('comingsoon');
-});
+});*/
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
