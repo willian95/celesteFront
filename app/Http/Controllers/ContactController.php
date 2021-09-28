@@ -14,7 +14,7 @@ class ContactController extends Controller
 
         \Mail::send("emails.emailUser", $data, function($message) {
 
-            $message->to("contact@contacto@celesteypiedra.com",)->subject("Contact");
+            $message->to("contacto@lattitude.co",)->subject("Contact");
             $message->from( env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));
 
         });
