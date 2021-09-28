@@ -152,7 +152,7 @@
                 <div class="single-info">
                   <h5>Email:</h5>
                   <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                     > info@celesteypiedra.com</a></p>
+                     > contacto@celesteypiedra.com</a></p>
 
                 </div>
               </div>
