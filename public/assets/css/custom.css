@@ -1926,4 +1926,31 @@ header.mextreo-header-area.nav-fixed button {
     .img-ar{
         height: 100%;
     }
+    .ws {
+
+        bottom: 8rem;
+        right: .9rem;
+    }
+    .ws img {
+    width: 40px;
+    }
+
+.logo-about{
+    margin-top: 2rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+}
+
+
+.ws{
+        position: fixed;
+    z-index: 99;
+    bottom: 2rem;
+    right: .9rem;
+}
+
+.ws img{
+    width: 50px;
 }

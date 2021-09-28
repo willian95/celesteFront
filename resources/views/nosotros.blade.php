@@ -32,22 +32,24 @@
       <div>
         <div class="row">
           <div class="col-md-9">
-            <p> Estructuración y diseño de proyectos</p>
-      <p> Diseño arquitectónico y gestión para licencia de construcción de edificaciones.
-      </p>
-      <p> Diseño urbano y gestión para licencias de urbanismo.
-      </p>
-      <p>Diseño y gestión de planes parciales.
-      </p>
-      <p>Diseño para proyectos de espacio público + paisajismo.
-      </p>
-      <p>Diseño urbano para planes maestros en zonas rurales.
-      </p>
-      <p>Coordinación e integración de ingenierías + presupuestos + especificaciones.
-      </p>
-      <p>Visualización 360 inmersiva e interactiva. </p>
+
+            <p>Estructuración y diseño de proyectos.</p>
+
+            <p>Diseño arquitectónico y gestión para licencia de construcción de edificaciones.</p>
+
+            <p>Diseño urbano y gestión para licencias de urbanismo.</p>
+
+            <p>Diseño y gestión de planes parciales.</p>
+
+           <p> Diseño para proyectos de espacio público + paisajismo.</p>
+
+           <p> Diseño urbano para planes maestros en zonas rurales.</p>
+
+            <p>Coordinación e integración de ingenierías + presupuestos + especificaciones.</p>
+
+            <p>Visualización 360 inmersiva e interactiva.</p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 logo-about">
             <img src="assets/img/iso.png" alt="">
           </div>
         </div>
