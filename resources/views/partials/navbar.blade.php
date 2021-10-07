@@ -3,17 +3,17 @@
       <div class="row">
         <div class=" col-md-4 d-flex">
           <div class="logo-wrapper">
-            <a href="{{ url('/home') }}">
+            <a href="{{ url('/') }}">
 
-              @if(url()->current() == url('/home'))
-                <img src="{{ url('assets/img/logo-white.png') }}" alt="" />
+              @if(url()->current() == url('/') )
+              <img src="{{ url('assets/img/logo-white.svg') }}" alt="" />
 
-                @elseif(url()->current() == url('/single'))
-                <img src="{{ url('assets/img/logo-white.png') }}" alt="" />
-                @endelseif
+
               @else
-                <img src="{{ url('assets/img/logo-black.png') }}" alt="" />
+                <img src="{{ url('assets/img/logo.svg') }}" alt="" />
+
               @endif
+
             </a>
 
           </div>
@@ -24,7 +24,7 @@
               <nav class="main-nav" role="navigation">
                 <input id="main-menu-state" type="checkbox" />
                 <label class="main-menu-btn" for="main-menu-state">
-                @if(url()->current() == url('/home'))
+                @if(url()->current() == url('/'))
                 <span class="main-menu-btn-icon"></span>
               @else
               <span class="main-menu-btn-icon main-menu-btn-icon--black "></span>

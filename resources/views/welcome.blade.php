@@ -21,7 +21,7 @@
 
 @include("partials.navbar")
 
-<div id="white-board" style="position: fixed; top:0; left: 0; bottom: 0; width: 100%; background-color: #fff; z-index: 999;"></div>
+<div id="white-board" style="position: fixed; top:0; left: 0; bottom: 0; width: 100%; background-color: #fff; z-index: 99999;"></div>
 
 <section class="bannerHome">
     <div class="bannercontainer">
@@ -64,7 +64,7 @@
         setTimeout(function(){
             $('.elipse').fadeOut(3000);
             $("#white-board").css("display", "none")
-            $('.elipse').css("display", "none")
+            $('.elipse').css("display", "none").fadeOut(3000);
         }, 6000)
 
     })
