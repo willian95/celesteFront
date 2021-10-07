@@ -340,6 +340,7 @@ body {
     grid-auto-rows: auto;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     gap: 1.5rem;
+    margin-bottom: 10rem;
 }
 
 .projects .item img {
@@ -1720,7 +1721,7 @@ header.mextreo-header-area.nav-fixed button {
     display: none;
 }
 .redes {
-    border-bottom: 1px solid #ffffff24;
+ /*   border-bottom: 1px solid #ffffff24;*/
     margin-bottom: 0.5rem;
     padding-bottom: 0.5rem;
 }

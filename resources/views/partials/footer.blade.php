@@ -10,11 +10,11 @@
     </a>
 
     </div>
-    <p> COPYRIGHT © 2021 CELESTEYPIEDRA / E-MAIL: <a
+  <!---  <p> COPYRIGHT © 2021 CELESTEYPIEDRA / E-MAIL: <a
         href="mailto:contacto@celesteypiedra.com">contacto@celesteypiedra.com</a> / TELEFONO: <a
         href="tel:+573222239933"> (+57) 322 223 99 33</a> / Cra. 4 # 13 –14 Piso 4 Ed. Davivienda / Santa Marta
     </p>
-</footer>
+</footer>--->
 <script>
       setTimeout(function () {
             $('#pre-loader').fadeOut(300);

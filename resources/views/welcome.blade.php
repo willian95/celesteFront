@@ -60,13 +60,13 @@
 @push("scripts")
 <script>
     $(document).ready(function(){
-        
+
         setTimeout(function(){
             $('.elipse').fadeOut(3000);
             $("#white-board").css("display", "none")
             $('.elipse').css("display", "none")
         }, 6000)
-        
+
     })
     $(".tes").hover(function() {
         $('#popup').modal({
@@ -78,7 +78,7 @@
         sliderType: "standard",
         sliderLayout: "fullscreen",
         dottedOverlay: "none",
-        delay: 8000,
+        delay: 6000,
         autoHeight: "on",
         minHeight: 480,
         navigation: {
@@ -139,13 +139,13 @@
         parallax: {
             type: "mouse",
             origo: "slidercenter",
-            speed: 2000,
+            speed: 1000,
             levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
         },
     });
-    
-    
-    
+
+
+
     $(".main-menu-btn").on("click", function() {
         if (!$('.logo-wrapper').hasClass("is-active")) {
             $('.logo-wrapper').addClass("filter")
