@@ -84,7 +84,7 @@
         navigation: {
             keyboardNavigation: "off",
             keyboard_direction: "horizontal",
-            onHoverStop: "on",
+            onHoverStop: "off",
             mouseScrollNavigation: "off",
             mouseScrollReverse: "default",
             touch: {
