@@ -78,7 +78,7 @@
         sliderType: "standard",
         sliderLayout: "fullscreen",
         dottedOverlay: "none",
-        delay: 6000,
+        delay: 4500,
         autoHeight: "on",
         minHeight: 480,
         navigation: {
@@ -139,7 +139,7 @@
         parallax: {
             type: "mouse",
             origo: "slidercenter",
-            speed: 1000,
+            speed: 2000,
             levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
         },
     });
