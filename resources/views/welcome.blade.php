@@ -78,9 +78,11 @@
         sliderType: "standard",
         sliderLayout: "fullscreen",
         dottedOverlay: "none",
-        delay: 4500,
+        delay: 4300,
         autoHeight: "on",
         minHeight: 480,
+        onHoverStop: 'off',
+
         navigation: {
             keyboardNavigation: "off",
             keyboard_direction: "horizontal",
