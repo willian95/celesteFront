@@ -62,9 +62,9 @@
     $(document).ready(function(){
 
         setTimeout(function(){
-            $('.elipse').fadeOut(3000);
+            $('.elipse').fadeOut(2000);
             $("#white-board").css("display", "none")
-            $('.elipse').css("display", "none").fadeOut(3000);
+            $('.elipse').css("display", "none").fadeOut(2000);
         }, 6000)
 
     })

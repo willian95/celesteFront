@@ -19,30 +19,30 @@
 <div class="container pt-3 about-fix mt-4">
 
     <div id="somos" class="about-grid mb-4">
-        <h3>somos</h3>
-        <p>Un estudio que se dedica al diseño arquitectónico y urbanístico, adaptándonos a la naturaleza con la
+        <h3 data-aos="fade-left" data-aos-duration="1500">somos</h3>
+        <p  data-aos="fade-right" data-aos-duration="2000"> Un estudio que se dedica al diseño arquitectónico y urbanístico, adaptándonos a la naturaleza con la
             conceptualización de diseños, basados en principios de sostenibilidad, adaptabilidad y resiliencia. Un
             estudio compuesto por un grupo de personas que día a día aportan con
             sus experiencias revelando la esencia de los lugares para convertirlos en destinos.</p>
     </div>
 
     <div id="hacemos" class="about-grid  ">
-        <h3>LO QUE HACEMOS </h3>
+        <h3 data-aos="fade-left" data-aos-duration="1500">LO QUE HACEMOS </h3>
 
         <div>
             <div class="row">
                 <div class="col-md-9">
 
-                    <p> Estructuración y diseño de proyectos.</p>
-                    <p>Diseño arquitectónico y gestión para licencia de construcción de edificaciones.</p>
-                    <p>Diseño urbano y gestión para licencias de urbanismo.</p>
-                    <p>Diseño para proyectos de espacio público + paisajismo.</p>
-                    <p>Diseño urbano para planes maestros en zonas rurales.</p>
-                    <p>Coordinación e integración de ingenierías + presupuestos + especificaciones.</p>
+                    <p  data-aos="fade-right" data-aos-duration="2000"> Estructuración y diseño de proyectos.</p>
+                    <p  data-aos="fade-right" data-aos-duration="2100">Diseño arquitectónico y gestión para licencia de construcción de edificaciones.</p>
+                    <p  data-aos="fade-right" data-aos-duration="2200">Diseño urbano y gestión para licencias de urbanismo.</p>
+                    <p  data-aos="fade-right" data-aos-duration="2300">Diseño para proyectos de espacio público + paisajismo.</p>
+                    <p  data-aos="fade-right" data-aos-duration="2400">Diseño urbano para planes maestros en zonas rurales.</p>
+                    <p  data-aos="fade-right" data-aos-duration="2500">Coordinación e integración de ingenierías + presupuestos + especificaciones.</p>
                 </div>
                 <div class="col-md-3 logo-about">
 
-                    <div id="pre-loader">
+                    <div id="pre-loader--about" data-aos="fade-left" data-aos-duration="1500">
                         <div class=" text-center preload-logo ">
                             <div class="content-loader">
                                 <div class="logo-loader">
@@ -75,17 +75,34 @@
     </div>
 
     <div id="manidesto" class="about-grid mb-4">
-        <h3>MANIFESTO</h3>
-        <p>
-            Hoy necesitamos reconectarnos con la tierra, con una relación emocional, sustentando la vida, convirtiéndola y
-            sosteniéndola. <br>
-            Nuestro desafío es entender el lenguaje de la naturaleza y convertirlo en arquitectura.<br>
-            Traemos vida a la tierra, estando al principio y al final de los ciclos, estando en todos lados transformando,
-            incluso dentro de cada ser.<br>
-            No somos un individuo, somos la interconexión del ser, forjándonos a hacer comunidad.<br>
-            No respondemos simplemente al presente, pensamos a largo plazo, buscando ser los ancestros que merecen las
-            generaciones futuras.<br>
-        </p>
+        <h3 data-aos="fade-left" data-aos-duration="1500">MANIFESTO</h3>
+
+      <div>
+      <div data-aos="fade-right" data-aos-duration="2000">
+            <p> Hoy necesitamos reconectarnos con la tierra, con una relación emocional, sustentando la vida, convirtiéndola y
+                sosteniéndola.</p>
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="2200">
+            <p> Nuestro desafío es entender el lenguaje de la naturaleza y convertirlo en arquitectura.
+            </p>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2200">
+
+            <p>Traemos vida a la tierra, estando al principio y al final de los ciclos, estando en todos lados transformando,
+                incluso dentro de cada ser</p>
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="2300">
+            <p> No somos un individuo, somos la interconexión del ser, forjándonos a hacer comunidad.
+            </p>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2400">
+            <p> No respondemos simplemente al presente, pensamos a largo plazo, buscando ser los ancestros que merecen las
+                generaciones futuras.</p>
+        </div>
+      </div>
+
     </div>
 
     <!--<div class="row pt-5 mt-5 text-lg-right mb-5">
@@ -110,67 +127,63 @@
     </div>--->
 </div>
 <style>
+    #pre-loader--about {
+        cursor: none;
+        position: relative;
+        display: table;
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        vertical-align: middle;
+        background: #fff;
+        z-index: 1;
+        top: -50px;
+    }
 
+    .pre-loader-container {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        z-index: 3;
+        text-align: center;
+    }
 
+    .content-loader {
+        background-color: #171717;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
 
-#pre-loader {
-    cursor: none;
-    position:relative;
-    display: table;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    vertical-align: middle;
-    background: #fff;
-    z-index: 99999;
-    top: -50px;
-}
+    .logo-loader {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        background: #fff;
+        position: relative;
+        /* background: #000;*/
+    }
 
-.pre-loader-container {
-    position: relative;
-    display: table-cell;
-    vertical-align: middle;
-    z-index: 3;
-    text-align: center;
-}
+    .logo-loader .icon-loader {
+        width: 100%;
+        height: 300px;
+    }
 
-.content-loader {
-    background-color: #171717;
-    display: flex;
-    justify-content: center;
-    height: auto;
-    margin: 0;
-    padding: 0;
-}
-
-.logo-loader {
-    width: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    background: #fff;
-    position: relative;
-    /* background: #000;*/
-}
-
-.logo-loader .icon-loader {
-    width: 100%;
-    height: 300px;
-}
-.logo-loader .icon-loader path.is-active {
-    animation-name: icon-loader;
-    animation-duration: 7s;
-    animation-iteration-count: 8;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-}
-
-
+    .logo-loader .icon-loader path.is-active {
+        animation-name: icon-loader;
+        animation-duration: 7s;
+        animation-iteration-count: 8;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
 </style>
 <style>
     footer {
