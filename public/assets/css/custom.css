@@ -43,6 +43,7 @@ body {
 .footer a,
 .footer p {
     color: #1d1d1dbd;
+    padding: 1rem;
 }
 .banner {
     height: 100vh !important;
