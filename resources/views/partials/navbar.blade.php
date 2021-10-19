@@ -62,7 +62,7 @@
                       </div>
                     </div>
                   </li>
-                  {{--<li><a href="{{ url('/blogs') }}">Noticias</a></li>--}}
+                  <li><a href="{{ url('/blogs') }}">Noticias</a></li>
                   <li>
                     <a data-toggle="modal" data-target=".contact-popup" class="tes" href="#">Contacto</a>
                   </li>
