@@ -90,7 +90,7 @@
         <div data-aos="fade-right" data-aos-duration="2200">
 
             <p>Traemos vida a la tierra, estando al principio y al final de los ciclos, estando en todos lados transformando,
-                incluso dentro de cada ser</p>
+                incluso dentro de cada ser.</p>
         </div>
 
         <div data-aos="fade-right" data-aos-duration="2300">

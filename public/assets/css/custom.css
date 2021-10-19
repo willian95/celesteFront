@@ -816,7 +816,7 @@ section.blog-details .blog-details-wrapper .blog-text h3 {
     color: #000;
 }
 section.blog-details .blog-details-wrapper .blog-text p {
-    padding: 30px 0px;
+    /*padding: 30px 0px;*/
 }
 section.blog-details .blog-details-wrapper .blog-text .gift-info {
     position: relative;
@@ -1958,4 +1958,7 @@ header.mextreo-header-area.nav-fixed button {
 
 .ws img{
     width: 50px;
+}
+#manidesto p{
+    margin-bottom: 0;
 }
