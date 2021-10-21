@@ -84,6 +84,9 @@
     @yield("content")
 
     <a class="ws" target="_blank" href="https://api.whatsapp.com/send?phone=+573222239933&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n.%20C&P"> <img src="{{ url('assets/img/whatsapp.svg') }}" alt=""> </a>
+
+
+
     <script src="{{ url('assets/js/jquery-3.4.1.min.js') }}"></script>
 
     <script src="{{ url('assets/js/bootstrap.min.js') }}"></script>

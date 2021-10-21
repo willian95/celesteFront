@@ -20,10 +20,11 @@
 
     <div id="somos" class="about-grid mb-4">
         <h3 data-aos="fade-left" data-aos-duration="1500">somos</h3>
-        <p  data-aos="fade-right" data-aos-duration="2000"> Un estudio que se dedica al diseño arquitectónico y urbanístico, adaptándonos a la naturaleza con la
-            conceptualización de diseños, basados en principios de sostenibilidad, adaptabilidad y resiliencia. Un
-            estudio compuesto por un grupo de personas que día a día aportan con
-            sus experiencias revelando la esencia de los lugares para convertirlos en destinos.</p>
+        <p  data-aos="fade-right" data-aos-duration="2000"> Un estudio que se dedica al diseño arquitectónico y urbanístico, basados en principios de sostenibilidad, adaptabilidad y resiliencia. Nuestro desafío constante ha sido entender el lenguaje de la naturaleza y convertirlo en arquitectura, que existimos para manifestar el alma de un lugar, desarrollando proyectos sostenibles e innovadores. <br> <br>
+        CELESTE & PIEDRA tiene el firme propósito de <strong>revelar la esencia de los lugares para convertirlos en destinos</strong>, creando espacios para sorprender y experimentar, cambiando positivamente a nuestra gente, nuestra región, nuestras comunidades y sus visitantes, y así transformamos para toda la vida.
+    </p>
+
+
     </div>
 
     <div id="hacemos" class="about-grid  ">

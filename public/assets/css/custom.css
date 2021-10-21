@@ -120,6 +120,7 @@ h3 {
     font-family: "futura";
 }
 .about-fix {
+    padding-bottom: 3.5rem;
 }
 .about-fix h3 {
     text-transform: uppercase;
@@ -1728,6 +1729,9 @@ header.mextreo-header-area.nav-fixed button {
  /*   border-bottom: 1px solid #ffffff24;*/
     margin-bottom: 0.5rem;
     padding-bottom: 0.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 .redes a {
     padding: 0 0.5rem;
@@ -1961,4 +1965,8 @@ header.mextreo-header-area.nav-fixed button {
 }
 #manidesto p{
     margin-bottom: 0;
+}
+.mychar{
+    width: 25px;
+    height: 25px;
 }
