@@ -9,7 +9,7 @@
     <a href="https://www.linkedin.com/company/12634750/admin/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
     </a>
 
-    <a href="https://my.archdaily.com/us/@celeste-and-piedra target="_blank">
+    <a href="https://my.archdaily.com/us/@celeste-and-piedra" target="_blank">
 
 <img class="mychar" src="{{ url('assets/img/logo-w.svg') }}" alt="">
     </a>
