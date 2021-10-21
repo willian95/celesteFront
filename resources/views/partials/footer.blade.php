@@ -10,8 +10,15 @@
     </a>
 
     <a href="https://my.archdaily.com/us/@celeste-and-piedra" target="_blank">
+    @if(url()->current() == url('/') )
+    <img class="mychar mycar-w" src="{{ url('assets/img/logo-w.svg') }}" alt="">
 
-<img class="mychar" src="{{ url('assets/img/logo-w.svg') }}" alt="">
+
+              @else
+              <img class="mychar" src="{{ url('assets/img/logo-w.svg') }}" alt="">
+
+              @endif
+
     </a>
 
     </div>
