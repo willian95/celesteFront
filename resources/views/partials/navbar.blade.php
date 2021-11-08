@@ -41,7 +41,7 @@
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="{{ url('/nosotros') }}">SOMOS</a>
-                        {{--<a class="dropdown-item" href="{{ url('/equipo') }}">EQUIPO</a>--}}
+                        <a class="dropdown-item" href="{{ url('/equipo') }}">EQUIPO</a>
 
                       </div>
                     </div>
