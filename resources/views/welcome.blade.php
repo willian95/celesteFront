@@ -21,7 +21,7 @@
 
 @include("partials.navbar")
 
-<div id="white-board" style="position: fixed; top:0; left: 0; bottom: 0; width: 100%; background-color: #fff; z-index: 999;"></div>
+<div id="white-board" style="position: fixed; top:0; left: 0; bottom: 0; width: 100%; background-color: #fff; z-index: 99999;"></div>
 
 <section class="bannerHome">
     <div class="bannercontainer">
@@ -60,13 +60,13 @@
 @push("scripts")
 <script>
     $(document).ready(function(){
-        
+
         setTimeout(function(){
-            $('.elipse').fadeOut(3000);
+            $('.elipse').fadeOut(2000);
             $("#white-board").css("display", "none")
-            $('.elipse').css("display", "none")
+            $('.elipse').css("display", "none").fadeOut(2000);
         }, 6000)
-        
+
     })
     $(".tes").hover(function() {
         $('#popup').modal({
@@ -78,13 +78,15 @@
         sliderType: "standard",
         sliderLayout: "fullscreen",
         dottedOverlay: "none",
-        delay: 8000,
+        delay: 4300,
         autoHeight: "on",
         minHeight: 480,
+        onHoverStop: 'off',
+
         navigation: {
             keyboardNavigation: "off",
             keyboard_direction: "horizontal",
-            onHoverStop: "on",
+            onHoverStop: "off",
             mouseScrollNavigation: "off",
             mouseScrollReverse: "default",
             touch: {
@@ -143,9 +145,9 @@
             levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
         },
     });
-    
-    
-    
+
+
+
     $(".main-menu-btn").on("click", function() {
         if (!$('.logo-wrapper').hasClass("is-active")) {
             $('.logo-wrapper').addClass("filter")

@@ -46,7 +46,7 @@
     <link rel="stylesheet" href="{{ url('assets/css/custom.css') }}">
     <style>
         footer {
-            position: relative!important;
+            position: relative !important;
         }
 
         .footer a,
@@ -61,109 +61,54 @@
         .sm-mint a:active,
         .sm-mint a.highlighted {
             padding: 14px 20px;
-            color: #000000!important;
+            color: #000000 !important;
         }
-        header.mextreo-header-area{
-  position: relative;
-    margin-bottom: 3rem;
-}
-.btn-drop {
 
-    color: #000!important;
+        header.mextreo-header-area {
+            position: relative;
+            margin-bottom: 3rem;
+        }
 
-}
+        .btn-drop {
+
+            color: #000 !important;
+
+        }
+
+        header.mextreo-header-area .logo-wrapper {
+
+            margin-top: .5rem !important;
+        }
+        .dropdown-menu  {
+    background: #ffffff70!important;
+    }
     </style>
 </head>
 
 <body>
     <button class="scroll-top scroll-to-target" data-target="html">
         <img src="assets/img/up-arrow.png" class="flaticon-up scrollup-icon"></img>
-      </button>
-      @include("partials.navbar")
-      @include("partials.loader")
+    </button>
+    @include("partials.navbar")
+    @include("partials.loader")
 
-    <section class="projects container mb-5 ">
+    <section class="projects container ">
         @foreach(DB::table("projects")->get() as $project)
         <div class="item aos-init aos-animate" data-aos="fade-up" data-aos-duration="3000">
-           <a href="{{ url('/proyecto/'.$project->slug) }}">
-            <div class="position-re o-hidden"> <img src="{{ $project->main_image }}" alt=""> </div>
-            <div class="con">
-                {{--<h6><span href="">Lorem</span></h6>--}}
-                <h5><span href="">{{ $project->name }}</span></h5>
-                <div class="line"></div> <a href=""><i class="ti-arrow-right"></i></a>
-            </div>
-           </a>
+            <a href="{{ url('/proyecto/'.$project->slug) }}">
+                <div class="position-re o-hidden"> <img src="{{ $project->main_image }}" alt=""> </div>
+                <div class="con">
+                    {{--<h6><span href="">Lorem</span></h6>--}}
+                    <h5><span href="">{{ $project->name }}</span></h5>
+                    <div class="line"></div> <a href=""><i class="ti-arrow-right"></i></a>
+                </div>
+            </a>
         </div>
         @endforeach
 
     </section>
 
-    <!-- Modal contacto -->
-  <div class="modal fade contact-popup" id="exampleModalCenter" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Contáctanos</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="grid-contact">
-            <div>
-           
-                <div class="form-group mcfg">
-                  <input type="text" class="form-control m-input" name="name" id="name-message" placeholder="Nombre*"
-                    onfocus="this.placeholder = ''" onblur="this.placeholder ='Nombre*'">
-                </div>
-                <div class="form-group mcfg">
-                  <input type="text" class="form-control m-input" name="email" id="email-message" placeholder="Correo electronico  *"
-                    onfocus="this.placeholder = ''" onblur="this.placeholder ='Correo electronico *'">
-                </div>
-                <div class="form-group mcfg">
-                  <textarea rows="4" class="form-control m-input" name="msg" id="message-message" placeholder="Mensaje *"
-                    onfocus="this.placeholder =''" onblur="this.placeholder ='Mensaje *'"></textarea>
-                </div>
-                <button type="submit" id="buttonSendMessage" class="m-submit btn-enviar" onclick="sendMessage()">enviar</button>
-                <div id="spinner"  style="display:none">
-                   Enviando...
-                </div>
-                <div class="col-md-12 text-center">
-                  <div class="cf-msg"></div>
-                </div>
-      
-            </div>
-
-            <div>
-
-              <div class="contact-details pl-5" data-aos="fade-up" data-aos-duration="3000">
-
-                <div class="single-info">
-                  <h5>Dirección:</h5>
-                  <p>Cra. 4 # 13 –14 Piso 4 Ed. Davivienda</p>
-                  <p>Santa Marta</p>
-                </div>
-                <div class="single-info">
-                  <h5>Teléfono:</h5>
-                  <p> (+57) 322 223 99 33 </p>
-
-                </div>
-                <div class="single-info">
-                  <h5>Email:</h5>
-                  <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                     > contacto@celesteypiedra.com</a></p>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
+    <a class="ws" target="_blank" href="https://api.whatsapp.com/send?phone=+573222239933&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n.%20C&P"> <img src="{{ url('assets/img/whatsapp.svg') }}" alt=""> </a>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/jquery-3.4.1.min.js"></script>
@@ -195,6 +140,67 @@
     <script type="text/javascript" src="assets/js/revslider.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+    <!-- Modal contacto -->
+    <div class="modal fade contact-popup" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Contáctanos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="grid-contact">
+                        <div>
+
+                            <div class="form-group mcfg">
+                                <input type="text" class="form-control m-input" name="name" id="name-message" placeholder="Nombre*" onfocus="this.placeholder = ''" onblur="this.placeholder ='Nombre*'">
+                            </div>
+                            <div class="form-group mcfg">
+                                <input type="text" class="form-control m-input" name="email" id="email-message" placeholder="Correo electronico  *" onfocus="this.placeholder = ''" onblur="this.placeholder ='Correo electronico *'">
+                            </div>
+                            <div class="form-group mcfg">
+                                <textarea rows="4" class="form-control m-input" name="msg" id="message-message" placeholder="Mensaje *" onfocus="this.placeholder =''" onblur="this.placeholder ='Mensaje *'"></textarea>
+                            </div>
+                            <button type="submit" id="buttonSendMessage" class="m-submit btn-enviar" onclick="sendMessage()">enviar</button>
+                            <div id="spinner" style="display:none">
+                                Enviando...
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <div class="cf-msg"></div>
+                            </div>
+
+                        </div>
+
+                        <div>
+
+                            <div class="contact-details pl-5" data-aos="fade-up" data-aos-duration="3000">
+
+                                <div class="single-info">
+                                    <h5>Dirección:</h5>
+                                    <p>Cra. 4 # 13 –14 Piso 4 Ed. Davivienda</p>
+                                    <p>Santa Marta</p>
+                                </div>
+                                <div class="single-info">
+                                    <h5>Teléfono:</h5>
+                                    <p> (+57) 322 223 99 33 </p>
+
+                                </div>
+                                <div class="single-info">
+                                    <h5>Email:</h5>
+                                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__"> contacto@celesteypiedra.com</a></p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <script>
         function sendMessage() {
 
@@ -206,23 +212,23 @@
             $("#spinner").css("display", "block")
 
             $.post("{{ url('/send/message') }}", {
-            "email": email,
-            "name": name,
-            "text": message,
-            "_token": "{{ csrf_token() }}"
+                "email": email,
+                "name": name,
+                "text": message,
+                "_token": "{{ csrf_token() }}"
             }, function(data) {
 
-            $("#buttonSendMessage").css("display", "block")
-            $("#spinner").css("display", "none")
+                $("#buttonSendMessage").css("display", "block")
+                $("#spinner").css("display", "none")
 
-            $("#email-message").val("")
-            $("#name-message").val("")
-            $("#message-message").val("")
+                $("#email-message").val("")
+                $("#name-message").val("")
+                $("#message-message").val("")
 
-            swal({
-                icon: "success",
-                text: "Mensaje enviado"
-            })
+                swal({
+                    icon: "success",
+                    text: "Mensaje enviado"
+                })
 
             })
 
