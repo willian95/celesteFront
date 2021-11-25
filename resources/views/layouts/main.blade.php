@@ -115,6 +115,18 @@
     <script type="text/javascript" src="{{ url('assets/js/plugin.min.js') }}"></script>
     <script type="text/javascript" src="{{ url('assets/js/revslider.min.js') }}"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9S99WQ3T1H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9S99WQ3T1H');
+</script>
+
+
 <script>
       setTimeout(function () {
             $('#pre-loader').fadeOut(300);
