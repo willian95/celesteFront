@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,45 +19,22 @@ use App\Http\Controllers\ContactController;
     return view('comingsoon');
 });*/
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/nosotros', function () {
-    return view('nosotros');
-});
-
-Route::get('/equipo', function () {
-    return view('equipo');
-});
-
-
-Route::get("proyectos", function(){
-
-    return view("allProjects");
-
-});
-
-Route::get("proyecto/{slug}", function($slug){
-
+Route::view('/', 'welcome');
+Route::view('/nosotros', 'nosotros');
+Route::view('/equipo', 'equipo');
+Route::view("proyectos", "projects");
+Route::view("grupo-tesa", "group-projects");
+Route::get("proyecto/{slug}", function ($slug) {
     $project = DB::table("projects")->where("slug", $slug)->first();
-
     return view("single", ["project" => $project]);
-
 });
 
-Route::get("blogs", function(){
+Route::view("blogs", "blogs");
 
-    return view("blogs");
-
-});
-
-Route::get("blog/{slug}", function($slug){
+Route::get("blog/{slug}", function ($slug) {
 
     $blog = DB::table("blogs")->where("slug", $slug)->first();
-
     return view("blog", ["blog" => $blog]);
-
 });
 
 Route::post("/send/message", [ContactController::class, "sendEmail"]);

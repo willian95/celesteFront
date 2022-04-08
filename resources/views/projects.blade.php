@@ -93,12 +93,11 @@
     @include("partials.loader")
 
     <section class="projects container ">
-        @foreach(DB::table("projects")->get() as $project)
+        @foreach(DB::table("projects")->where("section", "project")->get() as $project)
         <div class="item aos-init aos-animate" data-aos="fade-up" data-aos-duration="3000">
             <a href="{{ url('/proyecto/'.$project->slug) }}">
                 <div class="position-re o-hidden"> <img src="{{ $project->main_image }}" alt=""> </div>
                 <div class="con">
-                    {{--<h6><span href="">Lorem</span></h6>--}}
                     <h5><span href="">{{ $project->name }}</span></h5>
                     <div class="line"></div> <a href=""><i class="ti-arrow-right"></i></a>
                 </div>
