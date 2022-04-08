@@ -85,23 +85,21 @@
   @include("partials.navbar")
   @include("partials.loader")
   <style>
-
-    .dropdown-menu  {
-    background: #ffffff70!important;
+    .dropdown-menu {
+      background: #ffffff70 !important;
     }
   </style>
   <div class="main position-relative">
     <div class="slider slider-for">
 
 
-        <a data-fancybox="gallery" href="{{ $project->main_image }}">
-          <img src="{{ $project->main_image }}" alt="">
-          <div class="mask"></div>
-          <div class="icon-expand" >
-            <img class="" src="{{ url('assets/img/ecpand.svg') }}" alt="">
-
-          </div>
-        </a>
+      <a data-fancybox="gallery" href="{{ $project->main_image }}">
+        <img src="{{ $project->main_image }}" alt="">
+        <div class="mask"></div>
+        <div class="icon-expand">
+          <img class="" src="{{ url('assets/img/ecpand.svg') }}" alt="">
+        </div>
+      </a>
 
       @foreach(DB::table("secondary_images")->where("project_id", $project->id)->get() as $image)
       <a data-fancybox="gallery" href="{{ $image->image  }}">
@@ -119,35 +117,45 @@
   </div>
 
   <section class="">
-    <div class="containe">
+    <div class="m-">
       <div class="row">
+        @if($project->section === "group")
+        <div class="col-md-7">
+          <div class="slider slider-nav hero-content-group">
+            <div><img src="{{ $project->main_image }}" alt=""></div>
+            @foreach(DB::table("secondary_images")->where("project_id", $project->id)->get() as $image)
+            <div><img src="{{ $image->image }}" alt=""></div>
+            @endforeach
+          </div>
+        </div>
+        @endif
         <div class="col-md-5">
-          <div class="hero-content ">
-
-            <h2 >{{ $project->name }}</h2>
-            <p  class="icons-detail_content"> <img class="icon-detail"
-                src="{{ url('assets/img/pin.svg') }}" alt=""> {{ $project->location }}</p>
+          @if($project->section === "project")
+          <div class="hero-content">
+            @else
+            <div style="margin-right: 7rem;">
+            @endif
+            <h2>{{ $project->name }}</h2>
+            <p class="icons-detail_content"> <img class="icon-detail" src="{{ url('assets/img/pin.svg') }}" alt=""> {{ $project->location }}</p>
             <ul class="items-details">
               <li class="mb-3"> <img class="icon-detail " src="{{ url('assets/img/home.svg') }}" alt=""> {{ $project->project_type }}</li>
               <li> <img class="icon-detail" src="{{ url('assets/img/rule.svg') }}" alt=""> {{ $project->square_meter }}m<sup>2</sup></li>
             </ul>
-            <p >{!! $project->description !!}</p>
+            <p>{!! $project->description !!}</p>
+            @if($project->section === "project")
           </div>
+          @endif
         </div>
+        @if($project->section === "project")
         <div class="col-md-7">
           <div class="slider slider-nav">
             <div><img src="{{ $project->main_image }}" alt=""></div>
             @foreach(DB::table("secondary_images")->where("project_id", $project->id)->get() as $image)
             <div><img src="{{ $image->image }}" alt=""></div>
             @endforeach
-
-
           </div>
-
-
-
-
         </div>
+        @endif
       </div>
     </div>
   </section>
@@ -155,9 +163,8 @@
 
 
 
-   <!-- Modal contacto -->
-   <div class="modal fade contact-popup" id="exampleModalCenter" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <!-- Modal contacto -->
+  <div class="modal fade contact-popup" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -170,31 +177,28 @@
           <div class="grid-contact">
             <div>
 
-                <div class="form-group mcfg">
-                  <input type="text" class="form-control m-input" name="name" id="name-message" placeholder="Nombre*"
-                    onfocus="this.placeholder = ''" onblur="this.placeholder ='Nombre*'">
-                </div>
-                <div class="form-group mcfg">
-                  <input type="text" class="form-control m-input" name="email" id="email-message" placeholder="Correo electronico  *"
-                    onfocus="this.placeholder = ''" onblur="this.placeholder ='Correo electronico *'">
-                </div>
-                <div class="form-group mcfg">
-                  <textarea rows="4" class="form-control m-input" name="msg" id="message-message" placeholder="Mensaje *"
-                    onfocus="this.placeholder =''" onblur="this.placeholder ='Mensaje *'"></textarea>
-                </div>
-                <button type="button" id="buttonSendMessage" class="m-submit btn-enviar" onclick="sendMessage()">enviar</button>
-                <div id="spinner" style="display:none">
-                   Enviando...
-                </div>
-                <div class="col-md-12 text-center">
-                  <div class="cf-msg"></div>
-                </div>
+              <div class="form-group mcfg">
+                <input type="text" class="form-control m-input" name="name" id="name-message" placeholder="Nombre*" onfocus="this.placeholder = ''" onblur="this.placeholder ='Nombre*'">
+              </div>
+              <div class="form-group mcfg">
+                <input type="text" class="form-control m-input" name="email" id="email-message" placeholder="Correo electronico  *" onfocus="this.placeholder = ''" onblur="this.placeholder ='Correo electronico *'">
+              </div>
+              <div class="form-group mcfg">
+                <textarea rows="4" class="form-control m-input" name="msg" id="message-message" placeholder="Mensaje *" onfocus="this.placeholder =''" onblur="this.placeholder ='Mensaje *'"></textarea>
+              </div>
+              <button type="button" id="buttonSendMessage" class="m-submit btn-enviar" onclick="sendMessage()">enviar</button>
+              <div id="spinner" style="display:none">
+                Enviando...
+              </div>
+              <div class="col-md-12 text-center">
+                <div class="cf-msg"></div>
+              </div>
 
             </div>
 
             <div>
 
-              <div class="contact-details pl-5" >
+              <div class="contact-details pl-5">
 
                 <div class="single-info">
                   <h5>Dirección:</h5>
@@ -208,8 +212,7 @@
                 </div>
                 <div class="single-info">
                   <h5>Email:</h5>
-                  <p><a href="mailto:contacto@celesteypiedra.com" class="__cf_email__"
-                     > contacto@celesteypiedra.com</a></p>
+                  <p><a href="mailto:contacto@celesteypiedra.com" class="__cf_email__"> contacto@celesteypiedra.com</a></p>
 
                 </div>
               </div>
@@ -252,7 +255,7 @@
   <script type="text/javascript" src="{{ url('assets/js/revslider.min.js') }}"></script>
   <script src="{{ url('assets/js/slick.min.js') }}"></script>
   <script>
-    $(window).scroll(function () {
+    $(window).scroll(function() {
       if ($(document).scrollTop() > 70 && $(window).width() >= 0) {
         $(".stick-area").addClass("stick");
         //  $("#iso").addClass('img-size').attr('src', 'assets/img/logo.png').removeClass('scroll-up');
@@ -274,17 +277,16 @@
       slidesToShow: 3,
       slidesToScroll: 1,
       asNavFor: '.slider-for',
-    infinite:false,
+      infinite: false,
       arrows: false,
       focusOnSelect: true
     });
-
   </script>
-<script>
-      setTimeout(function () {
-            $('#pre-loader').fadeOut(300);
-        }, 1500)
-</script>
+  <script>
+    setTimeout(function() {
+      $('#pre-loader').fadeOut(300);
+    }, 1500)
+  </script>
 </body>
 
 </html>

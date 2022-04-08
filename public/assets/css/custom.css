@@ -1482,6 +1482,9 @@ section.mextreo-hero.inner .contact-details .single-info h5 {
 .hero-content {
     margin-left: 7rem;
 }
+.hero-content-group {
+    margin-left: 20rem;
+}
 /*
 .slider-nav .slick-slide img {
     display: block;
